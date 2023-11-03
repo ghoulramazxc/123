@@ -1,0 +1,92 @@
+/* Общие стили для приложения */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url(https://vsthemes.org/uploads/posts/2021-09/1632784059_1167804.jpg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 500px;
+  margin: 35px;
+  background: rgba(14, 97, 153, 0.712);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(12, 85, 194);
+}
+
+/* Стили для формы добавления задач */
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+/* Стили для списка задач */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+h1{
+  color: rgb(0, 119, 255)
+}
+.task-item {
+  background: #fff;
+  color: black;
+  border-bottom: 1px solid #f4f4f4;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item.completed {
+  color: #068aa1;
+  text-decoration: line-through;
+}
+
+.task-item button {
+  margin-left: 10px;
+}
+
+/* Стили для кнопок действий */
+.task-item button {
+  background: transparent;
+  color: #00b7ff;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  color: #f700ff;
+}
